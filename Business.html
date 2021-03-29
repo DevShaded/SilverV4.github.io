@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+<link rel="stylesheet" href="styles.css">
+      
+</head>
+    <body>
+    
+    <header>
+        <h1>Joe</h1>
+        <h4>Joe for the best Monkies!</h4>
+    </header>
+        <h2>Welcome</h2>
+        <p>Joe is the best known company that sells and manufactures life like Monkies.</p>
+        <br>
+        <br>
+        ABOUT US: Founded in 2009, by Sahil Farhat. We've manufactured over 200 million Monkies with over 150 million happy clients.
+                <h2>
+             PRODUCTS WE SELL://
+        </h2>
+    <section class=" blue Container">
+
+        
+        
+        
+        <article class="Card">
+                
+            <div class="Mandrill"> </div> 
+            <h3>Mandrill</h3> 
+            <p>The mandrill is a primate of the Old World monkey family. It is one of two species assigned to the genus Mandrillus, along with the drill. Both the mandrill and the drill were once classified as baboons in the genus Papio, but they now have their own genus, Mandrillus. </p>
+            <button>Contact</button>
+             </article>
+            
+        <article class="Card"> 
+            <div class="Baboon">;</div>
+        <h3>Baboons</h3>
+            <p>Baboons are primates comprising the genus Papio, one of the 23 genera of Old World monkeys. There are five species of baboons, commonly known as hamadryas baboon, Guinea baboon, olive baboon, yellow baboon and chacma baboon.</p>
+            <button>Contact</button>
+        </article>
+        
+        <article class="Card"> 
+            <div class="Mantled"></div>
+        <h3>Mantled Guereza</h3>
+            <p>The mantled guereza, also known simply as the guereza, the eastern black-and-white colobus, or the Abyssinian black-and-white colobus, is a black-and-white colobus, a type of Old World monkey.</p>
+            <button>Contact</button>
+        </article>
+        
+         </section> 
+         <h2>
+             OUR TEAM://
+        </h2>
+    <section class=" team Container">
+
+        
+        
+        
+        <article class="Card">
+                
+            <div class="icons">&#10086; </div> 
+            <h3>Sahil Farhat</h3> 
+            <p>Founder of Joe - Has been manufacturing life like Monkies from a young age alongside Ben Dover. </p>
+            <button>Contact</button>
+             </article>
+            
+        <article class="Card"> 
+            <div class="icons">&#x1F60E;</div>
+        <h3>Ben Dover</h3>
+            <p>Co-Founder of Joe - Has been manfuacturing life like monkies along side Sahil Farhat from a young age.</p>
+            <button>Contact</button>
+        </article>
+        
+         </section> 
+        <section>
+        <h2>MY ORDER FORM</h2>
+            <table>
+            <tr>
+                <td> Name: </td>
+                <td><input type="text" size="25" name="my-name"></td>
+                </tr>
+                
+            <tr>
+                
+                <td>ADDRESS:</td>
+              <td><input type="text" size="25" name="my-address"></td>
+                </tr>
+                
+                <tr>
+<td> Favourite Monkey: </td>
+<td>
+<select name="my-monkey">
+<option> Mandrill </option>
+<option> Baboon </option>
+<option> Mantled Guereza </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td> Quantity: </td>
+<td><input type="number" name="my-qty"
+value="1" min="1" max="5"> <small>(max 5)</small></td>
+    
+</tr>
+                <tr>
+                <br>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <input class="button"
+type="button"
+value="Process Order"
+                               onclick="placeOrder();">
+                        
+                        <input class="button"
+                               
+                               type="reset" value="Clear" 
+                               onclick="document.getElementById('my-order').style.display = 'none'";>
+                     </td>
+                </tr>
+
+            </table>
+        </section>
+        
+    <form>
+<h1>Question Form:</h1>
+Any Questions you may have?
+<br>
+<input type="text" size="50">
+<br><br>
+<button>Submit</button>
+</form>
+        <div id="my-order">
+</div>
+               
+        
+        <div class="footer">
+            <h3>Thanks for Visiting</h3>
+            <div class="Container">
+            <article class="Card">
+                <h3>Get in Touch</h3>
+                <p>The best place to buy Life-like Manufactured monkies.</p>
+                
+                </article>
+                
+                <artice class="Card">
+                <h3>Contact us</h3>
+                    <p>We would love to hear from you.</p>
+                    <br> Call or email us. <br>
+                    Mobile: 6969696969 
+                    Email:19217@gdc.school.nz
+                
+                
+                
+                </artice>
+            </div>
+            &copy; 2021 Joe Construction
+        </div>
+            <script>
+            function placeOrder () {
+                var orderForm = document.getElementById("my-form")
+                results = "<h3>Success!</h3> Here is your order.";
+                results += "<br>Name: " + orderForm.elements["my-name"].value;
+                results += "<br>Address: " + orderForm.elements["my-address"].value;
+                results += "<br>I like to order: " + orderForm.elements["my-monkey"].value;
+                results += "<br>Quantity: " + orderForm.elements["my-qty"].value;
+                var orderResults =document.getElementById("my-order");
+                 orderResults.style.display="block";
+                orderResults.innerHTML = results;   
+}
+        </script>
+   
+    
+    </body>
+    
+    
+</html>

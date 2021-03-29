@@ -1,0 +1,99 @@
+.body, body{
+    font-family: cursive;
+    text-align: center;
+}
+
+.header, header{
+    letter-spacing: 6px;
+    background: royalblue;
+    padding: 20px;
+    color: white
+}
+
+    .Container, Container{
+    display: flex;
+    justify-content: center;
+        flex-wrap: wrap;   
+}
+
+.Card, Card{
+    border: 1px solid #ccc;
+    background-color:burlywood;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 6px 6px 6px
+        rgba(0,0,0,0,3);
+}
+
+@media screen and (min-width: 50em){
+    .Card, Card{
+        flex-basis: 325px;
+    }
+    .header, header h1 {
+        font-size: 5em;
+    }
+}
+
+.icons, icons{
+    font-size: 8em;
+    padding 25px;   
+}
+
+.button, .container{
+    margin: 10px;
+}
+
+button, .button {
+    background: royalblue;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.blue{
+    background: teal;
+}
+
+td, .td {
+padding: 10px;
+}
+
+table {
+margin: auto;
+}
+ #my-order{
+background-color: #29C1C4;
+padding: 25px;
+     display: none;
+}
+
+.footer, footer{
+    padding: 30px;
+    background: grey;
+}
+
+.team{
+    background-color: darkslategray;
+}
+
+
+div.Baboon{
+    content: url(Images/baboon.jpg);
+          width: 700px;
+    height: 400px;
+        
+}
+
+div.Mandrill{
+    content: url(Images/Mandrill.jpg)
+}
+
+div.Mantled{
+    content: url(Images/guerza.jpg);
+    width: 350px;
+    height: 350px;
+        
+}
+    
